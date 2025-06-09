@@ -9,8 +9,8 @@ function ProfileBlock({ isMobile }) {
   const socialLinks = [
     { name: "GitHub", text: "Aayushman-nvm", url: "https://github.com/Aayushman-nvm", icon: <FaGithub size={18} /> },
     { name: "Twitter", text: "White-nvm", url: "https://x.com/White_nvm", icon: <FaTwitter size={18} /> },
-    { name: "Location", text: "Karnataka, India", url: "#", icon: <FaMapMarkerAlt size={18} /> },
-    { name: "Birthday", text: "January 31, 2006", url: "#", icon: <FaCalendarAlt size={18} /> }
+    { name: "Location", text: "Karnataka, India", url: "https://www.google.com/maps/place/Bengaluru,+Karnataka", icon: <FaMapMarkerAlt size={18} /> },
+    { name: "Birthday", text: "January 31, 2006", url: null, icon: <FaCalendarAlt size={18} /> }
   ];
 
   return (
