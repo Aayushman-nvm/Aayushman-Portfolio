@@ -13,25 +13,30 @@ function Layout() {
   }, [])
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen text-white px-2 py-2 gap-2 md:gap-8">
+    <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row min-h-screen text-white px-2 py-2 gap-4">
       {/* Sidebar/Profile */}
       <aside
-        className={`${
-          isMobile ? 'min-w-[320px] max-w-full' : 'w-1/3 max-w-[300px]'
-        } md:h-[100vh] rounded-2xl border border-[#2e3134] bg-[#202124] shadow-md`}
+        className="
+          w-full
+          sm:w-[90%]
+          lg:w-[300px]
+          lg:sticky lg:top-0 lg:h-screen
+          max-h-screen overflow-y-auto
+          rounded-2xl border border-[#152433] bg-[#202124] shadow-md
+        "
       >
         <ProfileBlock isMobile={isMobile} />
       </aside>
 
-      {/* Main area */}
+      {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        {/* Top Nav */}
+        {/* Top Nav on desktop */}
         <div className="hidden md:block mb-2">
           <NavBar />
         </div>
 
         {/* Page Content */}
-        <main className="flex-1 p-4 bg-[#18191A] rounded-xl border border-[#2e3134] shadow-inner overflow-y-auto">
+        <main className="flex-1 min-w-0 p-4 bg-[#18191A] rounded-xl border border-[#2e3134] shadow-inner overflow-y-auto">
           <Outlet />
         </main>
       </div>
