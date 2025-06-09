@@ -4,12 +4,12 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Projects() {
   const projects = [
-    { name: "Isroverse", link: "https://isroverse.vercel.app/", category: "Web application", img: "../../public/project-img/isroverse-ss.png" },
-    { name: "Midnight Blues", link: "https://midnight-blues.vercel.app/", category: "Web application", img: "../../public/project-img/midnightblues-ss.png" },
-    { name: "Upskill", link: "https://upskill-learn.vercel.app/", category: "Website", img: "../../public/project-img/upskill-ss.png" },
-    { name: "Pocketify", link: "https://pocketify.vercel.app/", category: "Web application", img: "../../public/project-img/pocketify-ss.png" },
-    { name: "Sky Compass", link: "https://sky-compass-six.vercel.app/", category: "Web application", img: "../../public/project-img/skycompass-ss.png" },
-    { name: "Flavour Dash", link: "https://flavour-dash.vercel.app/", category: "Web application", img: "../../public/project-img/flavourdash-ss.png" },
+    { name: "Isroverse", link: "https://isroverse.vercel.app/", category: "Web application", img: "/project-img/isroverse-ss.png" },
+    { name: "Midnight Blues", link: "https://midnight-blues.vercel.app/", category: "Web application", img: "/project-img/midnightblues-ss.png" },
+    { name: "Upskill", link: "https://upskill-learn.vercel.app/", category: "Website", img: "/project-img/upskill-ss.png" },
+    { name: "Pocketify", link: "https://pocketify.vercel.app/", category: "Web application", img: "/project-img/pocketify-ss.png" },
+    { name: "Sky Compass", link: "https://sky-compass-six.vercel.app/", category: "Web application", img: "/project-img/skycompass-ss.png" },
+    { name: "Flavour Dash", link: "https://flavour-dash.vercel.app/", category: "Web application", img: "/project-img/flavourdash-ss.png" },
   ];
 
   return (
