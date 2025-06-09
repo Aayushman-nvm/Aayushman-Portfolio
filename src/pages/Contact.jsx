@@ -109,7 +109,7 @@ function Contact() {
           Send Message
         </button>
         {successMsg && <p className="text-green-400 mt-2 border-2 border-green-400 rounded-lg py-2 px-2 flex items-center justify-center">{successMsg}</p>}
-        {failureMsg && <p className="text-red-400 mt-2 border-2 border-red-400 rounded-lg">{failureMsg}</p>}
+        {failureMsg && <p className="text-red-400 mt-2 border-2 border-red-400 rounded-lg py-2 px-2 flex items-center justify-center">{failureMsg}</p>}
       </form>
 
       {/* Other Contact Methods */}
