@@ -53,7 +53,7 @@ function Contact() {
   ];
 
   return (
-    <section className="text-white space-y-10 mb-14 md:mb-auto">
+    <section className="text-white space-y-10 mb-14 lg:mb-auto">
       <div>
         <h1 className="text-3xl font-bold">
           <Typewriter
@@ -78,7 +78,7 @@ function Contact() {
         onSubmit={sendEmail}
         className="space-y-4 bg-[#2e3134] p-6 rounded-xl shadow-md border border-[#3a3a3a]"
       >
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4">
           <input
             type="text"
             name="name"

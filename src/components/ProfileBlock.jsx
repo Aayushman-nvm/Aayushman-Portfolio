@@ -40,7 +40,7 @@ function ProfileBlock({ isMobile }) {
 
       {/* Expanded info */}
       {(isExpanded || !isMobile) && (
-        <div className="mt-6 space-y-4 md:text-center">
+        <div className="mt-6 space-y-4 lg:text-center">
           {!isMobile && (
             <div className="text-center">
               <img

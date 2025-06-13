@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaBookOpen } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -33,7 +32,7 @@ function Resume() {
   };
 
   return (
-    <div className="text-white mb-14 md:mb-auto">
+    <div className="text-white mb-14 lg:mb-auto">
       <h1 className="text-3xl font-bold">
         <Typewriter
           words={['Resume']}
@@ -97,7 +96,7 @@ function Resume() {
         </div>
       </section>
       <h2 className="text-2xl font-semibold">Skills</h2>
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4">
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
           <h3 className="text-xl font-bold text-amber-400 mb-2">Languages</h3>
           <ul className="list-disc pl-5 text-gray-300">

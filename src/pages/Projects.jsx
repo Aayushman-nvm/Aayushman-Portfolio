@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaEye } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -13,7 +12,7 @@ function Projects() {
   ];
 
   return (
-    <div className="text-white mb-14 md:mb-auto">
+    <div className="text-white mb-14 lg:mb-auto">
       <h1 className="text-3xl font-bold">
         <Typewriter
           words={['Projects']}

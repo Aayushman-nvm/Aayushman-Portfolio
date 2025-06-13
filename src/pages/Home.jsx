@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 
 function Home() {
@@ -31,7 +30,7 @@ function Home() {
   };
 
   return (
-    <section className="text-white space-y-6 mb-14 md:mb-auto">
+    <section className="text-white space-y-6 mb-14 lg:mb-auto">
       <div>
         <h1 className="text-3xl font-bold">
           <Typewriter
@@ -54,7 +53,7 @@ function Home() {
 
       <div>
         <h2 className="text-2xl font-semibold mb-3">What I’m Doing</h2>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4">
           {descObj.workingOn.map((item, idx) => (
             <div
               key={idx}
@@ -69,7 +68,7 @@ function Home() {
         </div>
       </div>
       <h2 className="text-2xl font-semibold">Skills</h2>
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4">
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
           <h3 className="text-xl font-bold text-amber-400 mb-2">Languages</h3>
           <ul className="list-disc pl-5 text-gray-300">

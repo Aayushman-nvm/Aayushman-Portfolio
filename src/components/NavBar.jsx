@@ -9,13 +9,13 @@ const navItems = [
 
 function NavBar() {
   return (
-    <nav className="md:min-w-[900px] md:max-w-full flex md:justify-center justify-around gap-2 md:bg-[#1e1e1e] bg-transparent backdrop-blur-md py-3 rounded-xl shadow-lg border border-[#2e3134]">
+    <nav className="flex lg:justify-center justify-around gap-2 lg:bg-[#1e1e1e] bg-transparent backdrop-blur-md py-3 rounded-xl shadow-lg border border-[#2e3134]">
       {navItems.map((item, idx) => (
         <NavLink
           key={idx}
           to={item.link}
           className={({ isActive }) =>
-            `px-4 py-2 rounded-xl text-sm md:text-base font-medium transition-all duration-200
+            `px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-200
             ${isActive
               ? 'text-amber-400 shadow-md'
               : 'hover:text-white/80 text-white '
