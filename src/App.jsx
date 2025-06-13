@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 import Layout from './components/Layout'
 import PageWrapper from './components/PageWrapper';
@@ -13,7 +13,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className='md:flex items-center justify-center min-h-screen bg-[#0e1013] md:p-24'>
+    <div className='lg:flex items-center justify-center min-h-screen bg-[#0e1013] lg:p-24'>
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route element={<Layout />}>
