@@ -4,21 +4,20 @@ import NavBar from './NavBar'
 import ProfileBlock from './ProfileBlock'
 
 function Layout() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024)
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    const handleResize = () => setIsMobile(window.innerWidth < 1024)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   return (
-    <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row min-h-screen text-white px-2 py-2 gap-4">
+    <div className="mx-auto flex flex-col lg:flex-row min-h-screen text-white px-2 py-2 gap-4">
       {/* Sidebar/Profile */}
       <aside
         className="
           w-full
-          sm:w-[90%]
           lg:w-[300px]
           lg:sticky lg:top-0 lg:h-screen
           max-h-screen overflow-y-auto
@@ -31,7 +30,7 @@ function Layout() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Top Nav on desktop */}
-        <div className="hidden md:block mb-2">
+        <div className="hidden lg:block mb-2">
           <NavBar />
         </div>
 
@@ -43,7 +42,7 @@ function Layout() {
 
       {/* Bottom Nav on mobile */}
       {isMobile && (
-        <div className="fixed bottom-2 left-1/2 -translate-x-1/2 w-[96%] z-50">
+        <div className="fixed bottom-2 left-1/2 -translate-x-1/2 w-[100%] z-50">
           <NavBar />
         </div>
       )}
