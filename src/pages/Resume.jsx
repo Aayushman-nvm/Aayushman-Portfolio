@@ -7,17 +7,16 @@ function Resume() {
       {
         college: "Sambhram Institute of Technology",
         degree: "Bachelor of Engineering in Computer Science",
-        year: "2023–2027",
+        year: "2023 – 2027",
         type: "Undergraduate",
-        description:
-          "Pursuing a Bachelor's degree in Computer Science Engineering, focusing on developing a strong foundation in software development, algorithms, data structures etc. As a student, I am actively involved in various projects and extracurricular activities that enhance my technical skills and teamwork abilities.",
+        description: "I'm currently studying Computer Science Engineering, working on building a solid base in software development, data structures, and all that core stuff. Along the way, I’ve been part of a few projects and college activities that have helped me get better at coding and working with others."
       },
     ],
     experience: [
       {
-        company: "Nutrimentor",
-        role: "Frontend Developer Assistant",
-        year: "2025–2025",
+        company: "Mimir",
+        role: "React Developer",
+        year: "February 2025 – May 2025",
         duration: "4 months",
         description:
           "Assisted in the development of the Nutrimentor platform prototype using React.js and Tailwind CSS. Collaborated with the team to implement responsive design and user-friendly interfaces, contributing to the overall functionality and aesthetics of the platform.",
