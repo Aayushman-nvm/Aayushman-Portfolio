@@ -3,9 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 function Home() {
   const descObj = {
     description: [
-      "I’m a Web Developer and Front-End Engineer based in Bangalore, Karnataka, India, currently expanding my expertise in full-stack technologies. I’m passionate about transforming ideas and real-world challenges into innovative digital solutions.",
-      "My role is to transform problems into fully functional web applications that are user-friendly, responsive, visually appealing, and practical. My goal is to deliver creative, effective solutions that clearly communicate the intended message through the medium of a web application.",
-      "I’m also deeply interested in emerging technologies like AI/ML, Web3, and Full-Stack Development. I’m constantly exploring how these fields can be integrated to build smarter, more impactful digital experiences."
+      "I'm a front-end web developer based in Bangalore, now diving into full-stack tech. I love turning ideas and real-world problems into clean, user-friendly web apps that look good and work great."
     ],
     workingOn: [
       {
@@ -14,7 +12,7 @@ function Home() {
       },
       {
         title: "Exploring",
-        text: "Looking into emerging technologies like AI ML, Web3, Full Stack Development and Mern Stack"
+        text: "Exploring AI integrated applications, MERN, and bit of Web3"
       },
       {
         title: "Hobbies",
