@@ -21,10 +21,10 @@ function Home() {
     ]
   };
 
-  const skills = {
-    languages: ["C", "C++", "Java", "Python"],
-    webDev: ["HTML", "CSS", "JavaScript"],
-    libraries: ["React", "Redux", "Tailwind CSS", "Bootstrap CSS"],
+  const homepageSkills = {
+    programming: ["JavaScript", "TypeScript"],
+    web: ["React", "Tailwind", "Redux", "Node.js", "Express"],
+    tools: ["MERN", "Next.js", "Git & GitHub"],
   };
 
   return (
@@ -68,30 +68,32 @@ function Home() {
       <h2 className="text-2xl font-semibold">Skills</h2>
       <div className="grid lg:grid-cols-3 gap-4">
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-amber-400 mb-2">Languages</h3>
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Programming Languages</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.languages.map((lang, idx) => (
+            {homepageSkills.programming.map((lang, idx) => (
               <li key={idx}>{lang}</li>
             ))}
           </ul>
         </div>
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-amber-400 mb-2">Web Development</h3>
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Web Technologies</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.webDev.map((web, idx) => (
-              <li key={idx}>{web}</li>
+            {homepageSkills.web.map((tech, idx) => (
+              <li key={idx}>{tech}</li>
             ))}
           </ul>
         </div>
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-amber-400 mb-2">Libraries and Frameworks</h3>
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Tools & Stacks</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.libraries.map((lib, idx) => (
-              <li key={idx}>{lib}</li>
+            {homepageSkills.tools.map((tool, idx) => (
+              <li key={idx}>{tool}</li>
             ))}
           </ul>
         </div>
       </div>
+
+
     </section>
   )
 }
