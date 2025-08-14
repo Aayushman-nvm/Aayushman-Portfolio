@@ -29,8 +29,8 @@ function Contact() {
     {
       icon: <FaEnvelope size={18} />,
       label: "Email",
-      value: "aayushmanjha.business@gmail.com",
-      link: "mailto:aayushmanjha.business@gmail.com"
+      value: "aayushmanj.dev@gmail.com",
+      link: "mailto:aayushmanjha.dev@gmail.com"
     },
     {
       icon: <FaTwitter size={18} />,
