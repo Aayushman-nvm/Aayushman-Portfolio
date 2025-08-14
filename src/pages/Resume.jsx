@@ -5,8 +5,8 @@ function Resume() {
   const resume = {
     education: [
       {
-        college: "Sambhram Institute of Technology",
-        degree: "Bachelor of Engineering in Computer Science",
+        degree: "Bachelor of Engineering",
+        stream: "Computer Science",
         year: "2023 – 2027",
         type: "Undergraduate",
         description: "I'm currently studying Computer Science Engineering, working on building a solid base in software development, data structures, and all that core stuff. Along the way, I’ve been part of a few projects and college activities that have helped me get better at coding and working with others."
@@ -24,10 +24,13 @@ function Resume() {
     ],
   };
 
-  const skills = {
-    languages: ["C", "C++", "Java", "Python"],
-    webDev: ["HTML", "CSS", "JavaScript"],
-    libraries: ["React", "Redux", "Tailwind CSS", "Bootstrap CSS"],
+  const resumeSkills = {
+    languages: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"],
+    frontend: ["HTML", "CSS", "React", "Redux", "Tailwind", "Bootstrap"],
+    backend: ["Node.js", "Express", "WebSockets"],
+    databases: ["MongoDB", "MySQL"],
+    tools: ["Git & GitHub", "Postman", "Playwright", "API Integration (including AI APIs)"],
+    stacks: ["MERN", "Next.js"],
   };
 
   return (
@@ -59,8 +62,8 @@ function Resume() {
               key={idx}
               className="border-l-2 border-[#444] pl-6 space-y-2"
             >
-              <h3 className="text-lg font-semibold">{edu.college}</h3>
-              <p className="text-sm text-gray-300">{edu.degree} • {edu.type}</p>
+              <h3 className="text-lg font-semibold">{edu.degree}</h3>
+              <p className="text-sm text-gray-300">{edu.stream} • {edu.type}</p>
               <p className="text-sm text-[#FFBF00]">{edu.year}</p>
               <p className="text-sm leading-relaxed text-gray-400">
                 {edu.description}
@@ -99,28 +102,59 @@ function Resume() {
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
           <h3 className="text-xl font-bold text-amber-400 mb-2">Languages</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.languages.map((lang, idx) => (
+            {resumeSkills.languages.map((lang, idx) => (
               <li key={idx}>{lang}</li>
             ))}
           </ul>
         </div>
+
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-amber-400 mb-2">Web Development</h3>
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Frontend</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.webDev.map((web, idx) => (
-              <li key={idx}>{web}</li>
+            {resumeSkills.frontend.map((item, idx) => (
+              <li key={idx}>{item}</li>
             ))}
           </ul>
         </div>
+
         <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold text-amber-400 mb-2">Libraries and Frameworks</h3>
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Backend</h3>
           <ul className="list-disc pl-5 text-gray-300">
-            {skills.libraries.map((lib, idx) => (
-              <li key={idx}>{lib}</li>
+            {resumeSkills.backend.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Databases</h3>
+          <ul className="list-disc pl-5 text-gray-300">
+            {resumeSkills.databases.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Stacks</h3>
+          <ul className="list-disc pl-5 text-gray-300">
+            {resumeSkills.stacks.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-[#2e3134] p-4 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-bold text-amber-400 mb-2">Tools</h3>
+          <ul className="list-disc pl-5 text-gray-300">
+            {resumeSkills.tools.map((item, idx) => (
+              <li key={idx}>{item}</li>
             ))}
           </ul>
         </div>
       </div>
+
+
     </div>
 
   );
