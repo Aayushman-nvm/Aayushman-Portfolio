@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
+import ProjectDetails from './pages/ProjectDetails'
 function App() {
 
   const location = useLocation();
@@ -32,6 +33,10 @@ function App() {
             <Route
               path="/projects"
               element={<PageWrapper><Projects /></PageWrapper>}
+            />
+            <Route
+              path="/projects/:projectName"
+              element={<PageWrapper><ProjectDetails /></PageWrapper>}
             />
             <Route
               path="/contact"
