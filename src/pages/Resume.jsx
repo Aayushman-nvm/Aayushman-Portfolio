@@ -1,5 +1,5 @@
-import { FaBookOpen } from "react-icons/fa";
-import { Typewriter } from 'react-simple-typewriter';
+import { FaBookOpen, FaClipboardList } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
 function Resume() {
   const resume = {
@@ -9,7 +9,8 @@ function Resume() {
         stream: "Computer Science",
         year: "2023 – 2027",
         type: "Undergraduate",
-        description: "I'm currently studying Computer Science Engineering, working on building a solid base in software development, data structures, and all that core stuff. Along the way, I’ve been part of a few projects and college activities that have helped me get better at coding and working with others."
+        description:
+          "I'm currently studying Computer Science Engineering, working on building a solid base in software development, data structures, and all that core stuff. Along the way, I’ve been part of a few projects and college activities that have helped me get better at coding and working with others.",
       },
     ],
     experience: [
@@ -26,10 +27,23 @@ function Resume() {
 
   const resumeSkills = {
     languages: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"],
-    frontend: ["HTML", "CSS", "React", "Redux", "Tailwind", "Bootstrap"],
+    frontend: [
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "Zustand",
+      "Tailwind",
+      "Bootstrap",
+    ],
     backend: ["Node.js", "Express", "WebSockets"],
     databases: ["MongoDB", "MySQL"],
-    tools: ["Git & GitHub", "Postman", "Playwright", "API Integration (including AI APIs)"],
+    tools: [
+      "Git & GitHub",
+      "Postman",
+      "Playwright",
+      "API Integration (including AI APIs)",
+    ],
     stacks: ["MERN", "Next.js"],
   };
 
@@ -37,7 +51,7 @@ function Resume() {
     <div className="text-white mb-14 lg:mb-auto">
       <h1 className="text-3xl font-bold">
         <Typewriter
-          words={['Resume']}
+          words={["Resume"]}
           loop={1}
           cursor
           cursorStyle="_"
@@ -58,12 +72,11 @@ function Resume() {
         </div>
         <div className="px-4 space-y-6">
           {resume.education.map((edu, idx) => (
-            <div
-              key={idx}
-              className="border-l-2 border-[#444] pl-6 space-y-2"
-            >
+            <div key={idx} className="border-l-2 border-[#444] pl-6 space-y-2">
               <h3 className="text-lg font-semibold">{edu.degree}</h3>
-              <p className="text-sm text-gray-300">{edu.stream} • {edu.type}</p>
+              <p className="text-sm text-gray-300">
+                {edu.stream} • {edu.type}
+              </p>
               <p className="text-sm text-[#FFBF00]">{edu.year}</p>
               <p className="text-sm leading-relaxed text-gray-400">
                 {edu.description}
@@ -77,18 +90,17 @@ function Resume() {
       <section className="space-y-4  mb-4">
         <div className="flex items-start gap-3">
           <div className="p-2 rounded-xl border border-[#3a3a3a] bg-[#222] hover:bg-[#333] shadow-[inset_1px_1px_0_#555,inset_-1px_-1px_0_#111]">
-            <FaBookOpen size={18} />
+            <FaClipboardList size={18} />
           </div>
           <h2 className="text-xl font-bold">Experience</h2>
         </div>
         <div className="px-4 space-y-6">
           {resume.experience.map((exp, idx) => (
-            <div
-              key={idx}
-              className="border-l-2 border-[#444] pl-6 space-y-2"
-            >
+            <div key={idx} className="border-l-2 border-[#444] pl-6 space-y-2">
               <h3 className="text-lg font-semibold">{exp.company}</h3>
-              <p className="text-sm text-gray-300">{exp.role} • {exp.duration}</p>
+              <p className="text-sm text-gray-300">
+                {exp.role} • {exp.duration}
+              </p>
               <p className="text-sm text-[#FFBF00]">{exp.year}</p>
               <p className="text-sm leading-relaxed text-gray-400">
                 {exp.description}
@@ -153,10 +165,7 @@ function Resume() {
           </ul>
         </div>
       </div>
-
-
     </div>
-
   );
 }
 
